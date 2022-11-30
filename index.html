@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //class ສຳເລັດຮູບ
+        // const date = new Date()
+        // document.write(date.toLocaleDateString())
+        // document.write('<br>')
+        // document.write(date.getFullYear())
+        // document.write('<br>')
+        // document.write(date.getFullYear()-2002,'Years old ')
+        // document.write('<br>')
+        // // static class 
+        // document.write(Math.pow(2,3))
+        // // upercas number  & lowercase number
+        // document.write(Math.floor(1,7))
+        // documnet.write(Math.round(1.7))
+        
+
+        let total = 9700;
+        let pay = 9500;
+        
+        // console.log(decimal)
+
+        // const quantity = decimal;
+        // console.log(+quantity);
+         
+        function price(x){
+            const decimal = `${x}`.substring(`${x}`.length - 3)
+            let y = Number(decimal)
+            let z = y - 500
+            if (z==0){
+                console.log(x)
+            }else{
+                if(z < 0){
+                    console.log(x - y)
+                }else{
+                    console.log(x - z)
+                }
+            }
+            
+            
+        }
+        price(9100) //9500
+
+        const scores = [99,-40,55,-60,66,100]
+        console.log(scores.length)
+        
+        // consonle.log(Math.abs(scores))
+        const {log, error,warn}=console
+        log(scores.length)
+        log(scores.reduce((a,b)=>Math.max(a,b)));
+        
+        
+        
+    </script>
+</body>
+</html>
